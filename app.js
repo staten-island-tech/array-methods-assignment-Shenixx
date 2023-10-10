@@ -1,9 +1,8 @@
-const student = [
+const students = [
     {
-        
         name: "Sam Kidney",
         DOB: 2008,
-        schools: ["PS 200", "IS201", SITHS],
+        schools: ["PS 200", "IS201", "SITHS"],
         age: function () {
             return year - this.DOB;
         },
@@ -34,6 +33,7 @@ const student = [
     },
 ];
 
-student.forEach((student)=> console.log(student.firstName));
-const current = student.filter((student)=> student.graduate === false);
-console.log(current);
+students.forEach((student) => console.log(student.name));
+students.forEach((student) => student.schools.forEach((school)=> console.log(school)));
+const afterbirth = students.filter((student)=> student.DOB >= 0);
+afterbirth.forEach((student) => console.log(student.DOB))
