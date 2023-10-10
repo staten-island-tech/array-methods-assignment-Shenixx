@@ -1,45 +1,39 @@
+const student = [
+    {
+        
+        name: "Sam Kidney",
+        DOB: 2008,
+        schools: ["PS 200", "IS201", SITHS],
+        age: function () {
+            return year - this.DOB;
+        },
+    },
+    {
+        name: "Kidney Pip",
+        DOB: 2000,
+        schools: ["PS 111", "IS211", "Stuv", "Harvard"],
+        age: function () {
+            return year - this.DOB;
+        },
+    },
+    {
+        name: "Pipney Samuel",
+        DOB: 1776,
+        schools: ["PS 20", "IS11", "Btech", "Phoenix State Uni",],
+        age: function () {
+            return year - this.DOB;
+        },
+    },
+    {
+        name: "Samuel The Prophet",
+        DOB: 1822,
+        schools: ["PS 69", "IS420", "SITHS", "NYU"],
+        age: function () {
+            return year - this.DOB;
+        },
+    },
+];
 
-
-
-// function getBMI(){
-//     const weight=Number(prompt("enter your weight in lbs"));
-//     const height=Number(prompt("enter height in inches"));
-//     const BMI = (703 * weight/(height**2));
-//     return BMI;
-// }
-
-// function checkBMI(BMI){
-//         if (BMI <= 25){ 
-//         console.log("healthy");
-//     } 
-//     else if (BMI => 15){
-//         console.log("unhealthy");
-//     } 
-//     else {
-//         console.log("unhealthy");
-//     }
-//     console.log(BMI)
-// }
-
-
-// function init(){
-//     const BMI = getBMI();
-//     checkBMI(BMI);
-// }
-
-// init()
-
-
-// // function check(y){
-// //     if (y>10) {
-// //         console.log("big too")
-// //     }
-// //     else if (y<=1){
-// //         console.log("too smol")
-// //     }
-// //     else{
-// //         console.log("noice")
-// //     }
-// // }
-
-// // check(2)
+student.forEach((student)=> console.log(student.firstName));
+const current = student.filter((student)=> student.graduate === false);
+console.log(current);
