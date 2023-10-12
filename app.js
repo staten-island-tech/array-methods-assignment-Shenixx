@@ -33,7 +33,13 @@ const students = [
     },
 ];
 
-students.forEach((student) => console.log(student.name));
-students.forEach((student) => student.schools.forEach((school)=> console.log(school)));
-const afterbirth = students.filter((student)=> student.DOB >= 0);
-afterbirth.forEach((student) => console.log(student.DOB))
+function getName() {students.forEach((student) => console.log(student.name));}
+
+function getSchool() {students.forEach((student) => student.schools.forEach((school)=> console.log(school)));}
+
+function getDOB () {const afterbirth = students.filter((student)=> student.DOB >= 0);
+afterbirth.forEach((student) => console.log(student.DOB));}
+
+getName()
+getSchool()
+getDOB()
